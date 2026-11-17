@@ -1,0 +1,13 @@
+.cart-btn {
+    position: relative;
+    size: 24px;       /* Taille de l'icône */
+    color: #333;           /* Couleur de l'icône */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.cart-btn:hover {
+    color: #007bff;        /* Couleur au survol */
+}
+
