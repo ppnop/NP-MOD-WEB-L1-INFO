@@ -10,10 +10,18 @@ h1 {
     font-style: normal;
 }
 
+span{
+    font-family: "Inter";
+    color: #F3F0E8;
+}
+
+button {
+    font-family: "Cormorant Garamond";
+}
 
 p{
-    font-family: "Cormorant Garamond", serif;
-    font-size: 50px;
+    font-family: "Inter", serif;
+    font-size: 30px;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
@@ -24,4 +32,50 @@ p{
     color: white;
     background-color: blue;
     font-size: 16px;
+}
+
+
+
+
+
+nav {
+    background-color: #0B0D0C; ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  background-color: #0B0D0C;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  position: relative; 
+}
+
+
+nav img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+nav span {
+    padding: 10px 20px;
 }
