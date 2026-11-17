@@ -3,6 +3,11 @@
 /* INTER */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); 
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
@@ -37,12 +42,14 @@ p{
 
 
 
-
+/* Partie Nav Bar */
 nav {
     background-color: #0B0D0C; ;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 nav > ul {
@@ -67,15 +74,34 @@ nav img {
 nav a {
   display: block;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #777A75;
+  transition: all 0.3s ease;
+
 }
 
 
 nav span {
     padding: 10px 20px;
+}
+
+.cart-btn {
+    position: relative;
+    width: 25px;
+    fill: #F3F0E8;     
+    text-decoration: none;
+    padding: 10px;
+}
+
+.logo-btn{
+    position: relative;
+    width: 40px;
+    fill: #F3F0E8;     
+    text-decoration: none;
+    padding: 10px;
 }
