@@ -1,54 +1,86 @@
-.hook img {
+.hook {
   position: relative;
-  height: auto;
+  display: block;
   width: 100%;
+  height:auto;
+  overflow: hidden;
 }
 
+.hook img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+@media (orientation: portrait) {
+  .hook {
+    height: auto; 
+  }}
 
 .hook #Catch_phrase {
   position: absolute;
-  top: 18%;
-  left: 31%;
-  transform: translate(-50%, -50%);
+  top: 15%;      
+  left: 8%;      
+  z-index: 2;     
+  margin: 0;
   color: #F3F0E8;
-  font-size: 42px;
+  font-size: clamp(24px, 4vw, 42px);
   font-weight: bold;
-  background-color: transparent;
-  padding: 10px 20px;
-  border-radius: 5px;
 }
-
 
 .hook #button_products {
   position: absolute;
-  top: 50%;
-  left: 26%;
-  transform: translate(-50%, -50%);
+  bottom: 12%;    
+  left: 8%;       
+  z-index: 2;     
   background-color: #C6A978;
-  font-size: 42px;
+  font-size: clamp(18px, 2.5vw, 32px);
   font-weight: bold;
   color: #F3F0E8;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 2px;
-  border-color: transparent;
-  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .hook #button_products:hover {
   background-color: #173D32;
-  transition: all 0.3s ease;
 }
 
 
-.mod_description #container{
+
+
+
+.mod_description {
   display: flex;
-  flex-direction: row;
-  flex: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.mod_description_right{
+  flex-direction: row; 
+  align-items: center; 
   justify-content: center;
+  gap: 32px; 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  padding: 20px;
 }
 
+.mod_description_left {
+  flex: 1; 
+  text-align: center;
+}
+
+.mod_description_left img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px;
+}
+
+.mod_description_right {
+  flex: 1.5; 
+}
+
+.mod_description_right p {
+  text-align: justify;
+  line-height: 1.6; 
+}
