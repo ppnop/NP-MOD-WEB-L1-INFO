@@ -15,6 +15,10 @@ h1 {
     font-style: normal;
 }
 
+h2{
+    font-family: "Cormorant Garamond", serif;
+}
+
 span{
     font-family: "Inter";
     color: #F3F0E8;
@@ -26,7 +30,7 @@ button {
 
 p{
     font-family: "Inter", serif;
-    font-size: 30px;
+    font-size: 14px;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;

@@ -40,6 +40,15 @@
 }
 
 
-p .mod_description {
+.mod_description #container{
+  display: flex;
+  flex-direction: row;
+  flex: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.mod_description_right{
   justify-content: center;
 }
+
