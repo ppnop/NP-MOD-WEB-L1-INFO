@@ -84,3 +84,21 @@
   text-align: justify;
   line-height: 1.6; 
 }
+
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+}
+.carousel::-webkit-scrollbar {
+  display: none; 
+}
+
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
