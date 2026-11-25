@@ -8,6 +8,12 @@ body {
     padding: 0;
 }
 
+hr{
+    color: #C6A978;
+    margin: 50px;
+}
+
+
 h1 {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
@@ -19,6 +25,9 @@ h2{
     font-family: "Cormorant Garamond", serif;
 }
 
+h3{
+    font-family: "Cormorant Garamond", serif;
+}
 span{
     font-family: "Inter";
     color: #F3F0E8;
@@ -108,4 +117,24 @@ nav span {
     fill: #F3F0E8;     
     text-decoration: none;
     padding: 10px;
+}
+
+
+
+button {
+  background-color: #C6A978;
+  font-size: clamp(18px, 2.5vw, 32px);
+  font-weight: bold;
+  color: #F3F0E8;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+button:hover {
+  background-color: #173D32;
 }
